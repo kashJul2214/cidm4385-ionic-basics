@@ -1,0 +1,24 @@
+<ion-view view-title="Current Weather", style="margin: 0px;"><img src="http://wjlondon.com/wp-content/uploads/2014/02/sky_colors-wide-1.jpg" width="1440" height="820">
+      <ion-content>
+        <div class="list">
+          <div class="item item-icon-left", style="background-color: aqua">
+            <i class="icon ion-android-cloud-outline"></i> Current Conditions: {{wc.weather.weather[0].main}}
+          </div>
+          <div class="item item-icon-left">
+            <i class="icon ion-thermometer"></i> Current Temperature: {{wc.weather.main.temp}}&deg;
+          </div>
+          <div class="item item-icon-left", style="background-color: aqua">
+            <i class="icon ion-ios-analytics"></i> Humidity: {{wc.weather.main.humidity}}%
+          </div>
+          <div class="item item-icon-left">
+            <i class="icon ion-arrow-up-a"></i> Today's High: {{wc.weather.main.temp_max}}&deg;
+          </div>
+          <div class="item item-icon-left", style="background-color: aqua">
+            <i class="icon ion-arrow-down-a"></i> Today's Low: {{wc.weather.main.temp_min}}&deg;
+          </div>
+          <div class="item item-icon-left">
+            <i class="icon ion-ios-pulse-strong"></i> Wind: {{wc.weather.wind.speed}}mph, {{wc.weather.wind.deg | direction}}
+          </div>
+        </div>
+      </ion-content>
+</ion-view>
