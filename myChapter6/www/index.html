@@ -45,10 +45,16 @@
         </ion-header-bar>
         <ion-content>
           <ion-list>
-            <ion-item class="item-icon-left" ui-sref="search" menu-close=""><span class="icon ion-search"></span> Find a City</ion-item>
-            <ion-item class="item-icon-left" ui-sref="settings" menu-close=""><span class="icon ion-ios-cog"></span> Settings</ion-item>
+            <ion-item class="item-icon-left" ui-sref="search" menu-close="">
+              <span class="icon ion-search"></span>Find a City
+            </ion-item>
+            <ion-item class="item-icon-left" ui-sref="settings" menu-close="">
+              <span class="icon ion-ios-cog"></span>Settings
+            </ion-item>
             <ion-item class="item-divider">Favorites</ion-item>
-            <ion-item class="item-icon-left" ui-sref="weather({city: location.city, lat: location.lat, lng: location.lng})" menu-close="" ng-repeat="location in locations"><span class="icon ion-ios-location"></span> {{location.city}}</ion-item>
+            <ion-item class="item-icon-left" ui-sref="weather({city: location.city, lat: location.lat, lng: location.lng" menu-close="" ng-repeat="location in locations">
+              <span class="icon ion-ios-location"></span>{{location.city}}
+            </ion-item>
           </ion-list>
         </ion-content>
       </ion-side-menu>
